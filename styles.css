@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    padding: 20px;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #4A90E2;
+    margin-bottom: 20px;
+}
+
+.drop-area {
+    border: 2px dashed #4A90E2;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #e6f2ff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.drop-area:hover {
+    background-color: #c9e0ff;
+}
+
+.drop-area p {
+    font-size: 16px;
+    margin: 0;
+    color: #4A90E2;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.filters {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.filters label {
+    font-weight: bold;
+    color: #333;
+}
+
+.filters select, .filters input[type="number"] {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: border-color 0.2s;
+}
+
+.filters select:focus, .filters input[type="number"]:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+#file-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.file-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.file-item span {
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+.file-item button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.file-item button:nth-child(1) {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+}
+
+.file-item button:nth-child(1):hover {
+    background-color: #357ABD;
+}
+
+.file-item button:nth-child(2) {
+    background-color: #E94E77;
+    color: white;
+    border: none;
+}
+
+.file-item button:nth-child(2):hover {
+    background-color: #D23A63;
+}
