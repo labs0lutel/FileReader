@@ -24,7 +24,7 @@ function displayFiles(filesToDisplay) {
 
 function filterFiles() {
     const fileType = fileTypeFilter.value;
-    const fileSize = parseFloat(fileSizeFilter.value) * 1024 * 1024; // переводим MB в байты
+    const fileSize = parseFloat(fileSizeFilter.value) * 1024 * 1024; 
 
     const filteredFiles = files.filter(file => {
         const isTypeMatch = fileType ? file.type.includes(fileType) : true;
