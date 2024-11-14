@@ -31,7 +31,23 @@
         <input type="number" id="file-size" min="0" />
     </div>
 
+    <hr>
+
+    <div class="device-controls">
+        <button id="get-location">Get Location</button>
+        <button id="start-camera">Start Camera</button>
+    </div>
+
     <div id="file-list"></div>
+
+    <hr>
+
+    <div id="location-output"></div>
+    <div id="camera-output">
+        <video id="camera" width="320" height="240" autoplay></video>
+        <button id="capture-photo">Capture Photo</button>
+        <canvas id="photo-canvas" width="320" height="240" style="display: none;"></canvas>
+    </div>
 
     <script src="./app.js"></script>
 </body>

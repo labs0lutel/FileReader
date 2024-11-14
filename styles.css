@@ -115,3 +115,60 @@ input[type="file"] {
 .file-item button:nth-child(2):hover {
     background-color: #D23A63;
 }
+
+.photo-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid #4A90E2;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.photo-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.photo-container a,
+.photo-container button {
+    display: none;
+}
+
+.photo-container:hover a,
+.photo-container:hover button {
+    display: inline-block;
+}
+
+.photo-container a {
+    padding: 8px 15px;
+    background-color: #4A90E2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+}
+
+.photo-container a:hover {
+    background-color: #357ABD;
+}
+
+.photo-container button {
+    padding: 8px 15px;
+    background-color: #E94E77;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.photo-container button:hover {
+    background-color: #D23A63;
+}
